@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro completado - Demo Hotjar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f0fdf4;
+      color: #065f46;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    a {
+      background: #10b981;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: bold;
+      transition: background 0.2s ease-in-out;
+    }
+    a:hover {
+      background: #059669;
+    }
+  </style>
+
+  <!-- Hotjar Tracking Code -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2327305,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <!-- /Hotjar -->
+
+  <script>
+    // Disparar evento de éxito al cargar la página
+    window.addEventListener("load", function() {
+      if (typeof hj === "function") {
+        hj("event", "signed_up");
+        console.log("Evento Hotjar 'signed_up' disparado ✅");
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>🎉 ¡Registro completado!</h1>
+  <p>Gracias por crear tu cuenta de prueba. Ya puedes explorar Hotjar.</p>
+  <a href="index.html">Volver a la página de inicio</a>
+</body>
+</html>

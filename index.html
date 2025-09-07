@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Hotjar - Registro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    form input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 100%;
+      background: #10b981;
+      border: none;
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: bold;
+      border-radius: 0.75rem;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    form button:hover {
+      background: #059669;
+    }
+
+    .extra {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+
+  <!-- Hotjar Tracking Code -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2327305,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <!-- /Hotjar -->
+</head>
+<body>
+  <header>
+    <h1>Regístrate gratis y empieza hoy</h1>
+    <p>Descubre cómo Hotjar te ayuda a entender a tus usuarios</p>
+  </header>
+
+  <main>
+    <h2>Crea tu cuenta</h2>
+    <form action="gracias.html" method="get">
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu nombre completo" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="tu@correo.com" required>
+
+      <label>Empresa (opcional)</label>
+      <input type="text" placeholder="Ej: Acme Inc.">
+
+      <button type="submit">🚀 Crear cuenta gratis</button>
+    </form>
+    <div class="extra">
+      <p>Sin tarjeta · Cancelas cuando quieras</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Demo Hotjar | Solo para fines de práctica
+  </footer>
+</body>
+</html>
